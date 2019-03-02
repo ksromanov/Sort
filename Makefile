@@ -2,7 +2,7 @@ CLM=env CLEANLIB=/usr/lib64/clean/exe/ clm -lat -lset -I /usr/lib64/clean/StdEnv
 
 UTIL=UtilityFunctions.dcl UtilityFunctions.icl
 
-all: selectionSort insertionSort
+all: selectionSort insertionSort shellSort
 
 selectionSort: selectionSort.icl ${UTIL}
 	$(CLM) selectionSort -o selectionSort
@@ -10,6 +10,9 @@ selectionSort: selectionSort.icl ${UTIL}
 insertionSort: insertionSort.icl ${UTIL}
 	$(CLM) insertionSort -o insertionSort
 
+shellSort: shellSort.icl ${UTIL}
+	$(CLM) shellSort -o shellSort
+
 clean:
-	rm -f selectionSort insertionSort
+	rm -f selectionSort insertionSort shellSort
 	rm -rf "Clean System Files"
