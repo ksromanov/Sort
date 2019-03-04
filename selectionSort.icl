@@ -24,5 +24,3 @@ sort arr = go 0 arr`
 
 Start :: *{!Real}
 Start = sort {! 1.0, 8.0, 3.0, 4.0}
-        /* { {! 1.0, 2.0, 3.0, 4.0 } & [2] = arr.[a]}
-        where (a,_,arr) = maxOfArray {! 1.0, 8.0, 3.0, 4.0 } 0 4 */
